@@ -101,6 +101,23 @@ textarea {
     text-align: center;
 }
 
+/*==========================header.php=====================================*/
+ul {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+ul li {
+    list-style-type: none;
+    font-size: 30px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+}
+
 /* =====================index.php===========================================*/
 body {
     background-image: url(../img/abstract.jpg);
@@ -118,7 +135,6 @@ body {
 }
 
 .main .links a {
-    text-decoration: none;
     color: black;
 }
 

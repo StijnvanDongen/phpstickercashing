@@ -32,7 +32,9 @@
             ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
         </script>
         <script src="https://www.google-analytics.com/analytics.js" async defer></script>
-
+        <?php
+        require 'header.php'
+        ?>
     <main>
         <div class="main">
             <div class="welcome">
