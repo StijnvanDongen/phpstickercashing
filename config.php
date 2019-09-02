@@ -1,5 +1,4 @@
-<?php session_start();
-
+<?php 
 $dbHost = 'localhost';
 $dbName = 'sticker_caching';
 $dbUser = 'root';
