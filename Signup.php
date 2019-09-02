@@ -1,10 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Charlotte van Oers
- * Date: 2-9-2019
- * Time: 09:01
- */
+require 'config.php';
+
 
 ?>
 <!doctype html>
@@ -21,7 +17,8 @@
 <body>
     <main>
         <div class="register">
-            <form action=""><p>Registreren</p>
+            <form action="register_config.php" method="post"><p>Registreren</p>
+                <input type="hidden" name="type" value="register">
                 <div class="form-group">
                     <p>Email</p>
                     <input type="email" name="email" id="email" placeholder="Voer je email in">
@@ -29,12 +26,14 @@
 
                 <div class="form-group">
                     <p>Wachtwoord</p>
-                    <input type="password" name="password" id="password" placeholder="Voer een wachtwoord in">
+                    <input type="password" name="password" id="password" placeholder="Voer een wachtwoord in" minlength="8"
+                           pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
                 </div>
     
                 <div class="form-group">
                     <p>Herhaal wachtwoord</p>
-                    <input type="password" name="repeat_password" id="repeat_password" placeholder="Herhaal je wachtwoord">
+                    <input type="password" name="repeat_password" id="repeat_password" placeholder="Herhaal je wachtwoord" minlength="8"
+                           pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
                 </div>
 
                 <input class="register" type="submit" value="Register">
@@ -44,5 +43,7 @@
     </main>
 </body>
 </html>
+<?php
 
+?>
 
