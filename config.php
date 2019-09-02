@@ -1,7 +1,7 @@
 <?php session_start();
 
 $dbHost = 'localhost';
-$dbName = 'sticker_cashing';
+$dbName = 'sticker_caching';
 $dbUser = 'root';
 $dbPass = '';
 

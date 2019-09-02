@@ -18,7 +18,7 @@ require 'config.php';
     <main>
         <div class="register">
             <form action="register_config.php" method="post"><p>Registreren</p>
-                <input type="hidden" name="type" value="register">
+<!--                <input type="hidden" name="type" value="register">-->
                 <div class="form-group">
                     <p>Email</p>
                     <input type="email" name="email" id="email" placeholder="Voer je email in">
@@ -27,13 +27,13 @@ require 'config.php';
                 <div class="form-group">
                     <p>Wachtwoord</p>
                     <input type="password" name="password" id="password" placeholder="Voer een wachtwoord in" minlength="8"
-                           pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                            required>
                 </div>
     
                 <div class="form-group">
                     <p>Herhaal wachtwoord</p>
                     <input type="password" name="repeat_password" id="repeat_password" placeholder="Herhaal je wachtwoord" minlength="8"
-                           pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                            required>
                 </div>
 
                 <input class="register" type="submit" value="Register">
