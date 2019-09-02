@@ -97,7 +97,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-.register {
+.register, .login {
     text-align: center;
 }
 
