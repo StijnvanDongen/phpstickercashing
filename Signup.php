@@ -20,25 +20,26 @@
 </head>
 <body>
 <main>
+    <div class="register">
+        <form action=""><p>Registreren</p>
+            <div class="form-group">
+                <p>Email</p>
+                <input type="email" name="email" placeholder="Voer je email in">
+            </div>
 
-    <form action=""><p>Registreren</p>
-        <div class="form-group">
-            <p>Email</p>
-            <input type="email" name="email" placeholder="Voer je email in">
-        </div>
+            <div class="form-group">
+                <p>Wachtwoord</p>
+                <input type="password" name="psw" placeholder="Voer een wachtwoord in">
+            </div>
 
-        <div class="form-group">
-            <p>Wachtwoord</p>
-            <input type="password" name="psw" placeholder="Voer een wachtwoord in">
-        </div>
+            <div class="form-group">
+                <p>Herhaal wachtwoord</p>
+                <input type="password" name="psw" placeholder="Herhaal je wachtwoord">
+            </div>
 
-        <div class="form-group">
-            <p>Herhaal wachtwoord</p>
-            <input type="password" name="psw" placeholder="Herhaal je wachtwoord">
-        </div>
-
-        <input class="register" type="submit" value="Register">
-    </form>
+            <input class="register" type="submit" value="Register">
+        </form>
+</div>
 
 </main>
 </body>
