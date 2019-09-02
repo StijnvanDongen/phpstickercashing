@@ -19,29 +19,29 @@
     <title>Registreren</title>
 </head>
 <body>
-<main>
-    <div class="register">
-        <form action=""><p>Registreren</p>
-            <div class="form-group">
-                <p>Email</p>
-                <input type="email" name="email" placeholder="Voer je email in">
-            </div>
+    <main>
+        <div class="register">
+            <form action=""><p>Registreren</p>
+                <div class="form-group">
+                    <p>Email</p>
+                    <input type="email" name="email" id="email" placeholder="Voer je email in">
+                </div>
 
-            <div class="form-group">
-                <p>Wachtwoord</p>
-                <input type="password" name="psw" placeholder="Voer een wachtwoord in">
-            </div>
+                <div class="form-group">
+                    <p>Wachtwoord</p>
+                    <input type="password" name="password" id="password" placeholder="Voer een wachtwoord in">
+                </div>
+    
+                <div class="form-group">
+                    <p>Herhaal wachtwoord</p>
+                    <input type="password" name="repeat_password" id="repeat_password" placeholder="Herhaal je wachtwoord">
+                </div>
 
-            <div class="form-group">
-                <p>Herhaal wachtwoord</p>
-                <input type="password" name="psw" placeholder="Herhaal je wachtwoord">
-            </div>
+                <input class="register" type="submit" value="Register">
+            </form>
+        </div>
 
-            <input class="register" type="submit" value="Register">
-        </form>
-</div>
-
-</main>
+    </main>
 </body>
 </html>
 
