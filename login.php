@@ -21,14 +21,14 @@
 </head>
 <body>
     <div class="login">
-        <form action=""><p>Inloggen</p>
+        <form action="login.php" method="post"><p>Inloggen</p>
             <div class="form-group">
                 <p>Email</p>
                 <input type="email" name="email" placeholder="Voer je email in">
             </div>
             <div class="form-group">
                 <p>Wachtwoord</p>
-                <input type="password" name="psw" placeholder="Voer hier je wachtwoord in">
+                <input type="password" name="password" id="password" placeholder="Voer hier je wachtwoord in">
             </div>
 
             <input class="login" type="submit" value="Inloggen">
