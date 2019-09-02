@@ -101,9 +101,26 @@ textarea {
     text-align: center;
 }
 
+/* =====================index.php===========================================*/
+body {
+    background-image: url(../img/abstract.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
+.main .welcome {
+    text-align: center;
+}
 
+.main .links {
+    display: flex;
+    justify-content: space-around;
+}
 
+.main .links a {
+    text-decoration: none;
+    color: black;
+}
 
 
 

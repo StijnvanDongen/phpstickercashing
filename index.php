@@ -20,7 +20,6 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
@@ -33,5 +32,19 @@
             ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
         </script>
         <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+    <main>
+        <div class="main">
+            <div class="welcome">
+                <h1>Maak hier een account aan of log in</h1>
+            </div>
+
+            <div class="links">
+                <a href="Signup.php">Klik hier om aan te melden</a>
+                <a href="login.php">Klik hier om in te loggen</a>
+            </div>
+        </div>
+
+    </main>
     </body>
 </html>
