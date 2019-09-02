@@ -27,13 +27,13 @@ require 'config.php';
                 <div class="form-group">
                     <p>Wachtwoord</p>
                     <input type="password" name="password" id="password" placeholder="Voer een wachtwoord in" minlength="8"
-                            required>
+                           pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"   required>
                 </div>
     
                 <div class="form-group">
                     <p>Herhaal wachtwoord</p>
                     <input type="password" name="repeat_password" id="repeat_password" placeholder="Herhaal je wachtwoord" minlength="8"
-                            required>
+                           pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"  required>
                 </div>
 
                 <input class="register" type="submit" value="Register">
