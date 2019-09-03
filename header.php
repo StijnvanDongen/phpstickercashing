@@ -22,8 +22,8 @@
     <header>
         <h1>Sticker Caching</h1>
         <nav>
-            <a href="">Login</a>
-            <a href="">Registreer</a>
+            <a href="login.php">Login</a>
+            <a href="Signup.php">Registreer</a>
         </nav>
     </header>
 
