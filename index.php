@@ -38,11 +38,9 @@
             <div class="welcome">
                 <h2>Maak hier een account aan of log in</h2>
             </div>
-
             <?php
             require 'header.php'
             ?>
-
     </main>
     </body>
 </html>
