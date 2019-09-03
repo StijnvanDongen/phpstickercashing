@@ -120,7 +120,8 @@ ul li a {
 
 /* =====================index.php===========================================*/
 body {
-    background-image: url(../img/abstract.jpg);
+    /*background-image: url(../img/abstract.jpg);*/
+    background-image: url(../img/Kaartje_Breda.PNG);
     background-repeat: no-repeat;
     background-size: cover;
 }
