@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Robin
- * Date: 2-9-2019
- * Time: 11:09
- */
 
 if ($_SERVER['REQUEST_METHOD'] != 'POST') {
     header('Location: index.php');
