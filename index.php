@@ -33,7 +33,7 @@
         </script>
         <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 
-    <main>
+
         <div class="main">
             <div class="welcome">
                 <h2>Maak hier een account aan of log in</h2>
@@ -41,6 +41,5 @@
             <?php
             require 'header.php'
             ?>
-    </main>
     </body>
 </html>
