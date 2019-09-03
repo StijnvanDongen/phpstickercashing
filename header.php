@@ -18,14 +18,24 @@
     <title>Document</title>
 </head>
     <body>
-    <div class="header">
-        <ul>
-            <li><a href="index.php">Home</a></li>
-            <li><a href=""> Naam</a></li>
-            <li><a href=""> Naam</a></li>
-            <li><a href=""> Naam</a></li>
-        </ul>
-    </div>
+
+    <header>
+        <h1>Sticker Caching</h1>
+        <nav>
+            <a href="">Login</a>
+            <a href="">Registreer</a>
+        </nav>
+    </header>
+
+
+<!--    <div class="header">-->
+<!--        <ul>-->
+<!--            <li><a href="index.php">Home</a></li>-->
+<!--            <li><a href=""> Naam</a></li>-->
+<!--            <li><a href=""> Naam</a></li>-->
+<!--            <li><a href=""> Naam</a></li>-->
+<!--        </ul>-->
+<!--    </div>-->
 
     </body>
 </html>

@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
+        <title>Sticker Caching</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -32,20 +32,16 @@
             ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
         </script>
         <script src="https://www.google-analytics.com/analytics.js" async defer></script>
-        <?php
-        require 'header.php'
-        ?>
+
     <main>
         <div class="main">
             <div class="welcome">
                 <h1>Maak hier een account aan of log in</h1>
             </div>
 
-            <div class="links">
-                <a href="Signup.php">Klik hier om aan te melden</a>
-                <a href="login.php">Klik hier om in te loggen</a>
-            </div>
-        </div>
+            <?php
+            require 'header.php'
+            ?>
 
     </main>
     </body>

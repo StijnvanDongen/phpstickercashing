@@ -128,6 +128,10 @@ body {
 
 .main .welcome {
     text-align: center;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .main .links {
@@ -139,7 +143,21 @@ body {
     color: black;
 }
 
+header{
+    background: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
+header a{
+    text-decoration: none;
+    margin: 10px;
+    border-style: solid;
+    padding: 10px;
+    border-radius: 3px;
+    color: black;
+}
 
 
 
