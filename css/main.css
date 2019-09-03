@@ -11,7 +11,6 @@
    ========================================================================== */
 
 html {
-    color: #222;
     font-size: 1em;
     line-height: 1.4;
 }
@@ -120,7 +119,6 @@ ul li a {
 
 /* =====================index.php===========================================*/
 body {
-    /*background-image: url(../img/abstract.jpg);*/
     background-image: url(../img/Kaartje_Breda.PNG);
     background-repeat: no-repeat;
     background-size: cover;
@@ -128,7 +126,8 @@ body {
 
 .main .welcome {
     text-align: center;
-    background-color: white;
+    background-color: black;
+    opacity: 0.7;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -143,8 +142,13 @@ body {
     color: black;
 }
 
+.main h2{
+    color: white;
+}
+
 header{
-    background: white;
+    background: black;
+    opacity: 0.7;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -156,7 +160,11 @@ header a{
     border-style: solid;
     padding: 10px;
     border-radius: 3px;
-    color: black;
+    color: white;
+}
+
+header h1{
+    color: white;
 }
 
 

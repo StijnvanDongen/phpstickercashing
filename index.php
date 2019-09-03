@@ -36,7 +36,7 @@
     <main>
         <div class="main">
             <div class="welcome">
-                <h1>Maak hier een account aan of log in</h1>
+                <h2>Maak hier een account aan of log in</h2>
             </div>
 
             <?php
