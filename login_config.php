@@ -19,10 +19,10 @@ $prepare->execute([
     ':email' => $email
 ]);
 
-$result = $prepare->fetchAll(PDO::FETCH_ASSOC);
+$result = $prepare->fetch(PDO::FETCH_ASSOC);
 
 if ($result){
-    $hashed_password = $result[0]['password'];
+    $hashed_password = $result['password'];
     if (password_verify($password, $hashed_password)){
         $_SESSION['email'] = $email;
         header('Location: index.php');
