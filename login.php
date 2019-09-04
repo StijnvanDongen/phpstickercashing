@@ -21,7 +21,7 @@
 </head>
 <body>
     <div class="login">
-        <form action="login.php" method="post"><p>Inloggen</p>
+        <form action="login_config.php" method="post"><p>Inloggen</p>
             <div class="form-group">
                 <p>Email</p>
                 <input type="email" name="email" placeholder="Voer je email in">
