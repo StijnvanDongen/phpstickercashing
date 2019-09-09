@@ -30,9 +30,7 @@
                 <p>Wachtwoord</p>
                 <input type="password" name="password" id="password" placeholder="Voer hier je wachtwoord in">
             </div>
-
             <input class="login" type="submit" value="Inloggen">
-
         </form>
     </div>
 </body>

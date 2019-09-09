@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!doctype html>
 <html class="no-js" lang="">
     <head>
@@ -36,7 +40,14 @@
 
         <div class="main">
             <div class="welcome">
-                <h2>Maak hier een account aan of log in</h2>
+                <?php
+                if (isset($_SESSION['email'])){
+                    $email = $_SESSION['email'];
+                    echo "Welkom $email";
+                }else
+                    echo " <h2>Maak hier een account aan of log in</h2>";
+                ?>
+
             </div>
             <?php
             require 'header.php'
