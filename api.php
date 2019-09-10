@@ -35,12 +35,9 @@
 </head>
 <body>
 <div id="googleMap" style="width:100%;height:100%"></div>
-<button onclick="getlocation();"> Show Position</button>
-<script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPr1C6cgCzPTg9AQiId7ZQiA9gXUo-kEQ&callback=googleMap">
-</script>
+
 <script>
-    function getlocation(){
+    function googleMap(){
         if(navigator.geolocation){
             navigator.geolocation.getCurrentPosition(showPos, showErr);
         }
@@ -83,33 +80,10 @@
 
     </script>
     <script>
-    function myMap() {
-        var myLatLng = {lat: 51.508742, lng: -0.120850};
-
-        var mapProp= {
-            center: myLatLng,
-            zoom:5,
-        };
-        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-
-        var marker = new google.maps.Marker({
-            position: (myLatLng)
-        });
-
-        marker.setMap(map);
-
-        // laat een infobalk zien boven de marker
-        var infowindow = new google.maps.InfoWindow({
-            content:"Engeland"
-        });
-
-        google.maps.event.addListener(marker, 'click', function () {
-            infowindow.open(map,marker);
-        });
-    }
+    
     </script>
     <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPr1C6cgCzPTg9AQiId7ZQiA9gXUo-kEQ&callback=myMap">
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPr1C6cgCzPTg9AQiId7ZQiA9gXUo-kEQ&callback=googleMap">
     </script>
 </body>
 </html>
