@@ -1,5 +1,5 @@
 <?php
-if ($_SERVER['REQUEST_METHOD'] =! 'POST'){
+if ($_SERVER['REQUEST_METHOD'] != 'POST'){
     header('Location: index.php');
     exit();
 }
@@ -10,7 +10,7 @@ $email = $_POST['email'];
 $password = $_POST['password'];
 $repeat_password = $_POST['repeat_password'];
 
-if ($password =! $repeat_password){
+if ($password != $repeat_password){
     header('Location: Signup.php');
 }
 
@@ -28,11 +28,14 @@ if ($result){
 }
 
 $hashed_password = password_hash($password, PASSWORD_DEFAULT);
-$sql = "INSERT INTO users (email, password) VALUES (:email, :password)";
+echo 'hash: '. $hashed_password .'<br>';
+
+$sql = 'INSERT INTO users (email, password) VALUES (:email, :password)';
 $prepare = $db->prepare($sql);
 $prepare->execute([
     ':email' =>$email,
     ':password' =>$hashed_password
 ]);
-
+echo $hashed_password;
+die;
 header('Location: index.php');
