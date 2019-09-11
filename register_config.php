@@ -36,6 +36,6 @@ $prepare->execute([
     ':email' =>$email,
     ':password' =>$hashed_password
 ]);
-echo $hashed_password;
-die;
+
+
 header('Location: index.php');
