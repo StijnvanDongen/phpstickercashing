@@ -28,8 +28,7 @@ foreach ($users as $user){
     }
     echo"
         <ul>
-            <li>$email $admin en $winkelier</li>
-        
+            <li>$email $admin en $winkelier</li>   
         </ul>
     ";
 }

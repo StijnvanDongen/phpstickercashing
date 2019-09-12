@@ -53,5 +53,26 @@ session_start();
         require 'header.php';
         ?>
 
+
+    <div class="information">
+        <div class="uitleg">
+            <h3>Uitleg</h3>
+            <p>Sticker caching is gemaakt voor mensen die van wandelen houden maar die graag iets meer willen doen dan alleen wandelen.</p>
+            <p>Verzamel objecten tijdens je wandelingen en win leuke prijzen bij verschillende winkels bij jou in de buurt!</p>
+            <p>Objecten verzamel je door QR-codes te scannen die hangen op verschillende locaties.</p>
+            <p>Deze locaties zijn te zien op een kaartje zodat je weet waar je naartoe moet lopen.</p>
+            <p>Mee doen is gratis en het enige wat je hoeft te doen is een profiel aan te maken en in te loggen</p>
+        </div>
+
+        <div class="winkeliers">
+            <h3>Winkeliers</h3>
+            <p>Als winkel eigenaar kan je toestemming geven om een QR-code bij jou winkel te laten hangen.</p>
+            <p>Aan deze QR-code kan een advertentie van jou winkel worden gehangen en je kan kiezen om mensen die de code scannen te belonen met bijvoorbeeld kortingscoupons.</p>
+            <p>Ben jij een winkeleigenaar en lijkt jou dit een leuk idee? Neem dan contact op!</p>
+            <p>Tel: 076 1234567</p>
+            <p>Email: StickerCaching@hotmail.com</p>
+        </div>
+    </div>
+
     </body>
 </html>
