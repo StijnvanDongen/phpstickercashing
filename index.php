@@ -72,6 +72,17 @@ session_start();
             <p>Tel: 076 1234567</p>
             <p>Email: StickerCaching@hotmail.com</p>
         </div>
+
+        <div class="start-playing">
+            <?php
+            if (isset($_SESSION['email'])){
+                echo"<a href='api.php'>Naar de kaart</a>";
+            }else{
+                echo"<a href='login.php'>Login om naar de kaart te gaan</a>";
+            }
+            ?>
+
+        </div>
     </div>
 
     </body>

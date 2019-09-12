@@ -191,6 +191,17 @@ header h1{
     color: white;
 }
 
+.start-playing{
+    margin-top: 50px;
+}
+
+.start-playing a{
+    border-style: solid;
+    border-color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
 
 
 
