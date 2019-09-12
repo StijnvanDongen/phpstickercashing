@@ -18,7 +18,8 @@ $prepare->execute([
 ]);
 
 $result = $prepare->fetchAll(PDO::FETCH_ASSOC);
-
+echo"<pre>";
+var_dump($result);
 if ($result){
     $hashed_password = $result[0]['password'];
     // $hashed_password = password_hash($password);
@@ -26,18 +27,21 @@ if ($result){
     // var_dump($hashed_password);
     // var_dump($_POST['password']);
     // var_dump(password_hash($_POST['password'], PASSWORD_DEFAULT));
-
+    var_dump($result);
     echo 'Hash in db: '. $hashed_password . '<br />';
     echo 'Hashed ingevoerde ww: '. password_hash($_POST['password'], PASSWORD_DEFAULT). '<br />';
     echo 'result pw_verify: <br />';
     var_dump(password_verify($password, $hashed_password));
 
-
     if (password_verify($password, $hashed_password)) {
         $_SESSION['email'] = $email;
         echo 'ingelogd!!!';
-
-        header('Location: index.php');
+        if ($result[0]['admin'] == 1){
+            $_SESSION['admin'] = 'admin';
+            header('Location: index.php');
+        }else{
+            header('Location: index.php');
+        }
         exit();
     }
 }
