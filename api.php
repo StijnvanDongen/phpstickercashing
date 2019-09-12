@@ -5,7 +5,7 @@
  * Date: 4-9-2019
  * Time: 15:46
  */
-    require 'header.php';
+//    require 'header.php';
     require 'footer.php';
 
 
