@@ -43,14 +43,15 @@ session_start();
                 <?php
                 if (isset($_SESSION['email'])){
                     $email = $_SESSION['email'];
-                    echo "Welkom $email";
+                    echo "<h2>Welkom $email</h2>";
                 }else
-                    echo " <h2>Maak hier een account aan of log in</h2>";
+                    echo"<h2>Maak hier een account aan of log in</h2>";
                 ?>
-
             </div>
-            <?php
-            require 'header.php'
-            ?>
+        </div>
+        <?php
+        require 'header.php';
+        ?>
+
     </body>
 </html>

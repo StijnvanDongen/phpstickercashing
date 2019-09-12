@@ -22,8 +22,14 @@
     <header>
         <h1>Sticker Caching</h1>
         <nav>
-            <a href="login.php">Login</a>
-            <a href="Signup.php">Registreer</a>
+            <?php
+            if (isset($_SESSION['email'])){
+                echo"<a href='logout.php'>Log uit</a>";
+            }else{
+                echo" <a href='login.php'>Login</a>";
+                echo" <a href='Signup.php'>Registreer</a>";
+            }
+            ?>
         </nav>
     </header>
 

@@ -36,12 +36,10 @@ if ($result){
     if (password_verify($password, $hashed_password)) {
         $_SESSION['email'] = $email;
         echo 'ingelogd!!!';
-        die();
+
         header('Location: index.php');
         exit();
     }
 }
 
 
-echo"<pre>";
-var_dump($result);
