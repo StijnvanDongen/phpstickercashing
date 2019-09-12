@@ -61,7 +61,7 @@ session_start();
             <p>Verzamel objecten tijdens je wandelingen en win leuke prijzen bij verschillende winkels bij jou in de buurt!</p>
             <p>Objecten verzamel je door QR-codes te scannen die hangen op verschillende locaties.</p>
             <p>Deze locaties zijn te zien op een kaartje zodat je weet waar je naartoe moet lopen.</p>
-            <p>Mee doen is gratis en het enige wat je hoeft te doen is een profiel aan te maken en in te loggen</p>
+            <p>Mee doen is gratis en het enige wat je hoeft te doen is een <a href='Signup.php'>profiel aan te maken</a> en <a href='login.php'>in te loggen</a></p>
         </div>
 
         <div class="winkeliers">
