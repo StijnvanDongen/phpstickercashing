@@ -26,13 +26,12 @@
         /* Optional: Makes the sample page fill the window. */
         html, body {
             height: 100%;
-            margin: 0;
-            padding: 0;
+
         }
     </style>
 </head>
 <body>
-<div id="googleMap" style="width:100%;height:100%"></div>
+<div id="googleMap" style="width:auto;height:100%; margin:100px;"></div>
 
 <script>
     function googleMap(){
