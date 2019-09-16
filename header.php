@@ -20,7 +20,7 @@
     <body>
 
     <header>
-        <h1>Sticker Caching</h1>
+        <h1><a href='index.php'>Sticker Caching</a></h1>
         <nav>
             <?php
             if (isset($_SESSION['email'])){
