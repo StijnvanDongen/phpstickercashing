@@ -34,30 +34,70 @@ if (isset($_POST['submit']))
     <title>Add advertisement</title>
 </head>
 <body>
-<div class="container-create">
-    <div class="welkom">
+<?php
+if (isset($_SESSION['email'])) {
+    echo "<a href='logout.php'>Log uit</a>";
+    echo "<p>Only Admins and ShopOwners can add a advertisement!</p>";
+
+    if (isset($_SESSION['admin'])) {
+        echo
+        "<div class='container-create'>
+    <div class='welkom'>
         <h1>Maak hier een advertentie aan</h1>
     </div>
 
-    <div class="form">
-        <form action="advertisement.php" method="post" enctype="multipart/form-data"><h1>Voeg advertentie toe</h1>
-            <div class="form_group">
+    <div class='form'>
+        <form action='advertisement.php' method='post' enctype='multipart/form-data'><h1>Voeg advertentie toe</h1>
+            <div class='form_group'>
                 <label>Name</label>
-                <input type="text" name="name">
+                <input type='text' name='name'>
             </div>
             
-            <div class="form_group">
+            <div class='form_group'>
                 <label>Select an advertisement to upload</label>
-                <input type="file" name="picture" placeholder="Voeg hier een objectplaatje toe">
+                <input type='file' name='picture' placeholder='Voeg hier een objectplaatje toe'>
             </div>
             <div>
-                <input class="create" type="submit" value="Aanmaken">
+                <input class='create' type='submit' value='Aanmaken'>
             </div>
         </form>
 
 
 
+    </div>";
+    }
+}else if (isset($_SESSION['winkelier'])){
+    echo
+    "<div class='container-create'>
+    <div class='welkom'>
+        <h1>Maak hier een advertentie aan</h1>
     </div>
+
+    <div class='form'>
+        <form action='advertisement.php' method='post' enctype='multipart/form-data'><h1>Voeg advertentie toe</h1>
+            <div class='form_group'>
+                <label>Name</label>
+                <input type='text' name='name'>
+            </div>
+            
+            <div class='form_group'>
+                <label>Select an advertisement to upload</label>
+                <input type='file' name='picture' placeholder='Voeg hier een objectplaatje toe'>
+            </div>
+            <div>
+                <input class='create' type='submit' value='Aanmaken'>
+            </div>
+        </form>
+
+
+
+    </div>";
+}else{
+    echo "<p>Only Admins and ShopOwners can add an advertisement</p>";
+    echo" <a href='login.php'>Login</a>";
+    echo" <a href='Signup.php'>Registreer</a>";
+}
+?>
 </div>
 </body>
 </html>
