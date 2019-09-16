@@ -25,8 +25,10 @@
             <?php
             if (isset($_SESSION['email'])){
                 echo"<a href='logout.php'>Log uit</a>";
+
                 if (isset($_SESSION['admin'])){
                     echo"<a href='profiles.php'>Profielen</a>";
+                    echo"<a href='advertisement.php'>Advertisement Create</a>";
                 }
             }else{
                 echo" <a href='login.php'>Login</a>";
