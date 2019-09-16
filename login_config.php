@@ -41,6 +41,7 @@ if ($result){
             header('Location: index.php');
         }elseif ($result[0]['winkelier'] == 1){
             $_SESSION['winkelier'] = 'winkelier';
+            header('location: index.php');
         }
         else{
             header('Location: index.php');
