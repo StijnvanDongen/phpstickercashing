@@ -39,7 +39,10 @@ if ($result){
         if ($result[0]['admin'] == 1){
             $_SESSION['admin'] = 'admin';
             header('Location: index.php');
-        }else{
+        }elseif ($result[0]['winkelier'] == 1){
+            $_SESSION['winkelier'] = 'winkelier';
+        }
+        else{
             header('Location: index.php');
         }
         exit();

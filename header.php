@@ -29,6 +29,8 @@
                 if (isset($_SESSION['admin'])){
                     echo"<a href='profiles.php'>Profielen</a>";
                     echo"<a href='advertisement.php'>Advertisement Create</a>";
+                }else if (isset($_SESSION['winkelier'])){
+                    echo"<a href='advertisement.php'>Advertisement Create</a>";
                 }
             }else{
                 echo" <a href='login.php'>Login</a>";
