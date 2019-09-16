@@ -36,7 +36,7 @@ if (isset($_POST['submit']))
 <body>
 <?php
 if (isset($_SESSION['email'])) {
-    echo "<a href='logout.php'>Log uit</a>";
+
     echo "<p>Only Admins and ShopOwners can add a advertisement!</p>";
 
     if (isset($_SESSION['admin'])) {
