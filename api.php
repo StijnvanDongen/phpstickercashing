@@ -6,7 +6,7 @@
  * Time: 15:46
  */
 //    require 'header.php';
-    require 'footer.php';
+//    require 'footer.php';
     echo "<a href='index.php'>Home</a>";
 ?>
 
