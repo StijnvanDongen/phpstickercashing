@@ -18,10 +18,24 @@ $prepare->execute([
 ]);
 
 $result = $prepare->fetch(PDO::FETCH_ASSOC);
-var_dump($result);
+$email = $result['email'];
+$winkelier = $result['winkelier'];
+$admin = $result['admin'];
+//var_dump($result);
+
+echo"
+    <form action='' method='post'>
+        <input type='text' value='$email'>
+        <input type='text' value='$winkelier'>
+        <input type='text' value='$admin'>
+    </form>
+";
 
 
 
 }else{
     header('Location: index.php');
 }
+?>
+
+
