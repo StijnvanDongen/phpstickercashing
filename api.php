@@ -31,7 +31,7 @@
     </style>
 </head>
 <body>
-<div id="googleMap" style="width:auto;height:100%; margin:100px;"></div>
+<div id="googleMap" style="width:50%;height:50%; margin:0 auto;"></div>
 
 <script>
     function googleMap(){
