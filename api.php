@@ -7,7 +7,8 @@
  */
 //    require 'header.php';
 //    require 'footer.php';
-    echo "<a href='index.php'>Home</a>";
+//    echo "<a href='index.php'>Home</a>";
+    require 'header.php';
 ?>
 
 
