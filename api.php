@@ -5,6 +5,7 @@
  * Date: 4-9-2019
  * Time: 15:46
  */
+session_start();
 //    require 'header.php';
 //    require 'footer.php';
 //    echo "<a href='index.php'>Home</a>";
