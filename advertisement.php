@@ -35,11 +35,11 @@ if (isset($_POST['submit']))
 </head>
 <body>
 <?php
-if (isset($_SESSION['email'])) {
+if (isset ($_SESSION['email']) and (!$_SESSION['admin']) and (!$_SESSION['winkelier'])) {
 
     echo "<h2>Only Admins and ShopOwners can add a advertisement!</h2>";
-
-    if (isset($_SESSION['admin'])) {
+}
+    if (isset($_SESSION['admin']) and ($_SESSION['email'])) {
         echo
         "<div class='container-create'>
     <div class='welkom'>
@@ -65,7 +65,7 @@ if (isset($_SESSION['email'])) {
 
 
     </div>";
-    }
+
 }else if (isset($_SESSION['winkelier'])){
     echo
     "<div class='container-create'>
