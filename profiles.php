@@ -8,7 +8,7 @@
 
 session_start();
 require 'header.php';
-if ($_SESSION['admin'] == 'admin') {
+if (isset($_SESSION['admin'])) {
     require 'config.php';
     $sql = "SELECT * FROM users";
     $query = $db->query($sql);
@@ -33,7 +33,7 @@ if ($_SESSION['admin'] == 'admin') {
         }
         echo "
         <ul>
-           <a href='' id='profiles'><list style='font-weight: bold;'>$email $admin en $winkelier</li></a>   
+           <a href='edit_profile.php?id=$id' id='profiles'><list style='font-weight: bold;'>$email $admin en $winkelier $id</li></a>   
         </ul>
     ";
     }
