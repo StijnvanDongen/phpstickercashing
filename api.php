@@ -50,8 +50,17 @@ require 'header.php';
             navigationControlOptions: {style:google.maps.NavigationControlStyle.SMALL}
         };
         var maps = new google.maps.Map(document.getElementById("googleMap"), myOptions);
-        var markers = new google.maps.Marker({position:lattlong, map:maps, title:"You are here!"});
+        var markers = new google.maps.Marker({
+            position:lattlong,
+            map:maps});
+
+        var infowindow = new google.maps.InfoWindow({
+            content:"Je bent hier"
+        });
+
+        infowindow.open(maps,markers);
     }
+
 
     //Handling Error and Rejection
     function showErr(error) {
