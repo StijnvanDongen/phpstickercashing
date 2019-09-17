@@ -37,7 +37,7 @@ if (isset($_POST['submit']))
 <?php
 if (isset($_SESSION['email'])) {
 
-    echo "<p>Only Admins and ShopOwners can add a advertisement!</p>";
+    echo "<h2>Only Admins and ShopOwners can add a advertisement!</h2>";
 
     if (isset($_SESSION['admin'])) {
         echo

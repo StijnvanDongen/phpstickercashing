@@ -39,16 +39,5 @@
             ?>
         </nav>
     </header>
-
-
-<!--    <div class="header">-->
-<!--        <ul>-->
-<!--            <li><a href="index.php">Home</a></li>-->
-<!--            <li><a href=""> Naam</a></li>-->
-<!--            <li><a href=""> Naam</a></li>-->
-<!--            <li><a href=""> Naam</a></li>-->
-<!--        </ul>-->
-<!--    </div>-->
-
     </body>
 </html>
