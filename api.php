@@ -17,6 +17,8 @@
     <title>Geolocation</title>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
     <style>
         /* Always set the map height explicitly to define the size of the div
          * element that contains the map. */
@@ -31,8 +33,9 @@
     </style>
 </head>
 <body>
-<div id="googleMap" style="width:50%;height:50%; margin:0 auto;"></div>
-
+<div class="map">
+    <div id="googleMap" style="width:50%;height:50%; margin:0 auto;"></div>
+</div>
 <script>
     function googleMap(){
         if(navigator.geolocation){
