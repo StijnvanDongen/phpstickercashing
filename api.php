@@ -35,9 +35,9 @@ session_start();
     </style>
 </head>
 <body>
-<div class="map">
-    <div id="googleMap" style="width:50%;height:50%; margin:0 auto;"></div>
-</div>
+
+<div id="googleMap" style="width:50%;height:50%; margin:0 auto;"></div>
+
 <script>
     function googleMap(){
         if(navigator.geolocation){
