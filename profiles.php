@@ -15,6 +15,7 @@ if ($_SESSION['admin'] == 'admin') {
     $users = $query->fetchAll(PDO::FETCH_ASSOC);
 
     foreach ($users as $user) {
+        $id = $user['id'];
         $email = $user['email'];
         $admin = $user['admin'];
         $winkelier = $user['winkelier'];
@@ -32,7 +33,7 @@ if ($_SESSION['admin'] == 'admin') {
         }
         echo "
         <ul>
-            <li style='font-weight: bold'>$email $admin en $winkelier</li>   
+           <a href='' id='profiles'><list style='font-weight: bold;'>$email $admin en $winkelier</li></a>   
         </ul>
     ";
     }
