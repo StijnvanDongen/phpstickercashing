@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Charlotte van Oers
- * Date: 4-9-2019
- * Time: 15:46
- */
+
 require 'header.php';
 
 ?>
