@@ -1,7 +1,6 @@
 <?php
 session_start();
 require 'header.php';
-
 ?>
 
 
@@ -26,9 +25,9 @@ require 'header.php';
         }
     </style>
 </head>
-<body>
+<body style="background: white">
 
-<div id="googleMap" style="width:50%;height:50%; margin:0 auto;"></div>
+<div id="googleMap" style="width:100%;height:100%; margin:0 auto;"></div>
 
 <script>
     function googleMap(){
