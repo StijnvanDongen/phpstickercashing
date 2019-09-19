@@ -23,8 +23,12 @@ if (isset($_SESSION['email'])) {
 
     $result = $prepare->fetch(PDO::FETCH_ASSOC);
     $picture = $result['picture'];
+    $description = $result['discription'];
 
     echo "<img src='$picture' alt='object' style='width: 20%; height: 40%; margin-bottom: 100px'>";
+    echo"<br>";
+    echo $description;
+    echo"<br>";
 
     echo "<a href='collect_object.php?id=$id&email=$email'>Verzamel</a>";
 }else{
