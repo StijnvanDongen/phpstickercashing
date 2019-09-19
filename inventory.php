@@ -8,6 +8,7 @@
 
 session_start();
 require 'config.php';
+require 'header.php';
 
 if (isset($_SESSION['email'])){
 
@@ -35,7 +36,7 @@ if (isset($_SESSION['email'])){
         $object_name = $result_object['name'];
         echo"
         <ul>
-            <a href='object.php?id=$object_id'><li>$object_name</li></a>
+            <a href='object.php?id=$object_id' style='font-weight: bold; background-color: black; padding: 20px; width: 400px; opacity: 0.7'><li style='color: white; text-align: center'>$object_name</li></a>
         </ul>
         ";
 

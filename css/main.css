@@ -112,7 +112,7 @@ ul li {
     font-size: 30px;
 }
 
-ul li a {
+ul a li {
     text-decoration: none;
     color: black;
 }
