@@ -21,7 +21,11 @@ $prepare->execute([
 $result = $prepare->fetch(PDO::FETCH_ASSOC);
 
 if ($result){
-    echo"Je hebt dit al";
+    echo"<script>alert('Je hebt dit al')
+        if(true){
+    window.location.href = 'api.php'
+        }
+        </script>";
 }else {
 
 
