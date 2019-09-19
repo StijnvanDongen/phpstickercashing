@@ -13,6 +13,7 @@ if (isset($_SESSION['email'])) {
     require 'config.php';
 
     $id = $_GET['id'];
+    $email = $_SESSION['email'];
 
     $sql = "SELECT * FROM objects WHERE id=:id";
     $prepare = $db->prepare($sql);
@@ -25,7 +26,7 @@ if (isset($_SESSION['email'])) {
 
     echo "<img src='$picture' alt='object' style='width: 20%; height: 40%; margin-bottom: 100px'>";
 
-    echo "<a href=''>Verzamel</a>";
+    echo "<a href='collect_object.php?id=$id&email=$email'>Verzamel</a>";
 }else{
     header('Location: index.php');
 }
