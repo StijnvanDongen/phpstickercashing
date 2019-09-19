@@ -20,7 +20,7 @@ if (isset($_SESSION['email'])){
     ]);
 
     $objects = $prepare->fetchAll(PDO::FETCH_ASSOC);
-    
+
 
     foreach ($objects as $object){
         $object_id = $object['object_id'];
