@@ -34,9 +34,9 @@ if (isset($_SESSION['email'])){
         $result_object = $prepare->fetch(PDO::FETCH_ASSOC);
         $object_name = $result_object['name'];
         echo"
-        <ol>
-            <li>$object_name</li>
-        </ol>
+        <ul>
+            <a href='object.php?id=$object_id'><li>$object_name</li></a>
+        </ul>
         ";
 
     }
