@@ -27,6 +27,7 @@
             <?php
             if (isset($_SESSION['email'])){
                 echo"<a href='logout.php'>Log uit</a>";
+                echo"<a href='inventory.php'>Inventory</a>";
 
                 if (isset($_SESSION['admin'])){
                     echo"<a href='profiles.php'>Profielen</a>";
