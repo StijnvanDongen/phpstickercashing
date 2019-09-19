@@ -7,6 +7,7 @@
  */
 session_start();
 require 'config.php';
+require 'header.php';
 
 if (isset($_SESSION['email'])){
     $object_id = $_GET['id'];
